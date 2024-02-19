@@ -121,6 +121,29 @@ style="height:100%" id="exam-form">
 
     </div>
 </form>
+
+<script>
+    $('.custome-radio').on('click', function () {
+        var selectedAnswer = $(this).val();
+
+        $.ajax({
+            url: '/StudentAnswer/CalculateResult',
+            method: 'POST',
+            data: {
+                answerId: @Model.question.AnswerId,
+                selectedChoice: selectedAnswer,
+                questionIndex: @Model.question.Index
+            },
+            success: function (result) {
+                console.log(result);
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    });
+</script>
+
 <script>
     const examForm = document.getElementById('exam-form');
 
@@ -145,7 +168,6 @@ style="height:100%" id="exam-form">
         }
     }, 1000);
 </script>
-
 
 @section PageStyle {
     <link rel="stylesheet" href="~/css/StudentAnswerStudentExam.css">
