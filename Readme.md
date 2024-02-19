@@ -30,7 +30,7 @@ The Student Examination Monitoring System is a web-based platform designed to si
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Ahmd-Naser/OnlineExamGraduateProject.git
+   git clone https://github.com/Muhamed4/Online-Exam.git
 2. Navigate to the project folder:
 
    ```bash
