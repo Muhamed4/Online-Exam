@@ -31,10 +31,8 @@ The Student Examination Monitoring System is a web-based platform designed to si
 
    ```bash
    git clone https://github.com/Muhamed4/Online-Exam.git
-2. Navigate to the project folder:
+2. Navigate to the project folder.
 
-   ```bash
-   cd OnlineExamGraduateProject/OnlineExam
 3. Open the project in your preferred code editor.
 
 4. Configure the necessary dependencies and packages (see Dependencies section).
